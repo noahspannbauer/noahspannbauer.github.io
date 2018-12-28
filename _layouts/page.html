@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+     <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+  	{% include header.html %}
+  	<div class="container">
+	  	<div class="content">
+		    {{ content }}
+	  	</div>
+	  	<div class="pageNav">
+  		{% for item in site.data.azFunctions %}
+		    <li>
+		    	<a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+		    </li>
+		{% endfor %}
+		</div>
+  	</div>
+  </body>
+</html>

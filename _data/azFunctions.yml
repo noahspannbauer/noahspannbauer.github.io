@@ -1,0 +1,6 @@
+- name: Introduciton
+  link: /AzureFunctions/
+- name: Getting Started
+  link: /AzureFunctions/GettingStarted.html
+- name: Connect To SharePoint Online
+  link: /AzureFunctions/ConnectToSPO.html
